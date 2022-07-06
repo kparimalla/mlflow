@@ -1,15 +1,15 @@
-Example taken from https://github.com/mlflow/mlflow/tree/master/examples/tensorflow/tf2
+Example taken from https://github.com/mlflow/mlflow/tree/master/examples/sklearn_elasticnet_wine
 
 ### Setup
-1. Create a code with url- https://github.com/oneconvergence/dkubeio-examples/tree/mlflow/mlflow branch -mlflow
+1. Create a code with url- https://github.com/kparimalla/mlflow/tree/main/mlflow_sklearn_1.1.1 and branch as main
 2. Create an output model 
 
 ### Traning
-1. Create a vs code IDE with tensorflow 2.6.0 cpu image
+1. Create a vs code IDE with sklearn 1.1.1 cpu image
 2. cd to the code directory where we have the conda.yaml file
 3. conda env create -f conda.yaml
-4. conda activate tensorflow-example
-5. python train_predict.py --code {code name} --output {output model name}
+4. conda activate mlflow_sklearn
+5. python train.py --code {code name} --output {output model name}
 
 ### Building Image
 1. Go to the model details page which was given as output in the above training run. A new version will be there in the version list.
@@ -27,9 +27,6 @@ Example taken from https://github.com/mlflow/mlflow/tree/master/examples/tensorf
 
 ### Prediction
 1. Copy the curl command from the deployment page
-2. Change the data section to
--d '{
-    "columns": ["SepalLength", "SepalWidth", "PetalLength", "PetalWidth"],
-    "data": [[5.1, 3.3, 1.7, 0.5], [5.9, 3.0, 4.2, 1.5], [6.9, 3.1, 5.4, 2.1]]
-}'
+2. Change the Content-Type & data section to,
+"Content-Type: text/csv" --data-binary "@wine-quality.csv"
 
