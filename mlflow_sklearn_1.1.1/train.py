@@ -55,16 +55,16 @@ if __name__ == "__main__":
     test_y = test[["quality"]]
 
     parser = argparse.ArgumentParser()
-    parser.add_argument("--code", required=True, help="input code name")
-    parser.add_argument("--dataset", help="input dataset name")
-    parser.add_argument("--output", required=True, help="output model name")
+    # parser.add_argument("--code", required=True, help="input code name")
+    # parser.add_argument("--dataset", help="input dataset name")
+    # parser.add_argument("--output", required=True, help="output model name")
 
     parser.add_argument("--alpha", default=0.5, type=float, help="alpha")
     parser.add_argument("--l1_ratio", default=0.5, type=float, help="l1_ratio")
 
     args = parser.parse_args(sys.argv[1:])
     print (args)
-    run_id = m.create_run(code=args.code, output=args.output)
+    # run_id = m.create_run(code=args.code, output=args.output)
 
     # alpha = float(sys.argv[1]) if len(sys.argv) > 1 else 0.5
     # l1_ratio = float(sys.argv[2]) if len(sys.argv) > 2 else 0.5
