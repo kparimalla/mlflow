@@ -1,0 +1,7 @@
+name: mlflow_sklearn
+conda_env: conda.yaml
+
+entry_points:
+  main:
+    parameters:
+    command: "python train.py"
