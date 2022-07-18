@@ -35,7 +35,7 @@ eg: mlflow artifacts  download -r c263bdaa-9505-4dd5-81fa-f9dbf40190fc -d ./outp
 3. Run the below command to build the image
 ```
 mlflow models build-docker -n <image-name> -m <local-path>/decision-tree-classifier
-eg: mlflow models build-docker -n lucifer001/mlflow-pytorch-demo:demo1 -m output/decision-tree-classifier
+eg: mlflow models build-docker -n lucifer001/mlflow-sklearn:demo1 -m output/decision-tree-classifier
 ```
 4.Push the image
 
