@@ -10,3 +10,7 @@ dependencies:
       - pandas
       - git+https://github.com/oneconvergence/dkube.git@3.3.mp
       - boto3
+variables:
+  MLFLOW_TRACKING_INSECURE_TLS: "true"
+  MLFLOW_TRACKING_URI: "https://192.168.200.107:32222"
+  MLFLOW_TRACKING_TOKEN: "eyJhbGciOiJSUzI1NiIsImtpZCI6Ijc0YmNkZjBmZWJmNDRiOGRhZGQxZWIyOGM2MjhkYWYxIn0.eyJ1c2VybmFtZSI6Im9jZGt1YmUiLCJyb2xlIjoiZGF0YXNjaWVudGlzdCxtbGUscGUsb3BlcmF0b3IiLCJkZXBsb3kiOmZhbHNlLCJleHAiOjQ4OTc4MTM1OTMsImlhdCI6MTY1NzgxMzU5MywiaXNzIjoiRGt1YmUifQ.UJIEZg8GfF4Uw24tydNGxx-nAhOZAH33ATj9sDTR9RH1Pudem7fLxOK7sHsITirKhafcDEGmDeNRv_nrtRZ2kvx_sV1zwNGdu7L4TtJRE8w5ZhKX_jvOjL3mzntnxWwkE7mD61rgvQECSgIbAgrFtZpE_94G1P12zEqcNM8j4aLY24KKR3lxfLrhcMubPOBH29N-1vtYnr4UrI3kb7Ci5caRXwU2YFdmeAly34DyUfYhcqZRwFa1bcffIiBTHetfCHJT46nUJNeKlJtLVg9lazO7YtVIKKkNLxnECYiUbCUz8KIguTPOhaa2NYN3hfpklQcdY7Uevb_OqOd6SUg-rA" 
