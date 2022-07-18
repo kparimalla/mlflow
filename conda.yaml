@@ -10,3 +10,7 @@ dependencies:
       - pandas
       - git+https://github.com/oneconvergence/dkube.git@3.3.mp
       - boto3
+variables:
+  MLFLOW_TRACKING_INSECURE_TLS: "true"
+  MLFLOW_TRACKING_URI: "<https://<ip>:32222>"
+  MLFLOW_TRACKING_TOKEN: "<Token>"
